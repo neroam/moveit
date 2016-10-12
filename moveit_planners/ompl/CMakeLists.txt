@@ -17,6 +17,8 @@ find_package(catkin REQUIRED COMPONENTS
   eigen_conversions
   )
 
+add_definitions(-std=c++11)
+
 find_package(OMPL REQUIRED)
 
 generate_dynamic_reconfigure_options("ompl_interface/cfg/OMPLDynamicReconfigure.cfg")
